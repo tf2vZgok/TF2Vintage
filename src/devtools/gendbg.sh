@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OBJCOPY=$STEAM_RUNTIME_PATH/bin/objcopy
+OBJCOPY=/usr/bin/objcopy
 
 function usage {
 	echo "$0 /path/to/input/file [-o /path/to/output/file ]"
@@ -36,9 +36,7 @@ if [ "$OUTFILEDIR" != "$INFILEDIR" ]; then
 	OUTFILE=${OUTFILEDIR}/${OUTFILE}
 fi
 
-pushd "$INFILEDIR"	
+pushd "$INFILEDIR"
 $OBJCOPY "$INFILE" "$OUTFILE"
 $OBJCOPY --add-gnu-debuglink="$OUTFILE" "$INFILE"
 popd
-
-

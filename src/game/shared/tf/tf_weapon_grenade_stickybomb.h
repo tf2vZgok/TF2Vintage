@@ -1,9 +1,9 @@
-//====== Copyright © 1996-2005, Valve Corporation, All rights reserved. ========//
+//====== Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ========//
 //
 // Purpose: TF Stickybomb.
 //
 //=============================================================================//
-#ifndef TF_WEAPON_GRENADE_STICKY_H
+#ifndef TF_WEAPON_GRENADE_STICKYBOMB_H
 #define TF_WEAPON_GRENADE_STICKYBOMB_H
 #ifdef _WIN32
 #pragma once

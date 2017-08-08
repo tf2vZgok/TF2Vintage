@@ -1,6 +1,6 @@
 # Files to ignore when considering what GIT should commit.
 
-# Visual Studio 
+# Visual Studio
 *.suo
 *.user
 *.sln.docstates
@@ -23,6 +23,7 @@ ipch
 *.sln
 
 # OSX/Linux build products
+*.project
 *.mak
 *.mak.vpc_crc
 *.xcodeproj/
@@ -40,10 +41,18 @@ server.lib
 
 client.so
 client.so.dbg
+client_srv.so
+client_srv.so.dbg
 server.so
 server.so.dbg
 server_srv.so
 server_srv.so.dbg
+
+serverplugin_empty.so
+serverplugin_empty.so.dbg
+serverplugin_empty_srv.so
+serverplugin_empty_srv.so.dbg
+
 
 client.dylib
 client.dylib.dSYM/
@@ -62,6 +71,12 @@ src/lib/public/raytrace.lib
 src/lib/public/tier1.lib
 src/lib/public/vgui_controls.lib
 
+src/lib/public/linux32/mathlib.a
+src/lib/public/linux32/raytrace.a
+src/lib/public/linux32/tier1.a
+src/lib/public/linux32/vgui_controls.a
+
 # misc files
 fgdlib.lib
 src/utils/sapi51/Samples/VB/TTSAppVB/ttsapp.RES
+*.7z
