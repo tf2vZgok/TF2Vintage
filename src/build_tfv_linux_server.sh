@@ -1,5 +1,4 @@
 #!/bin/bash
-NPROC=$(nproc)
 export VALVEDIR=$PWD/devtools/valve
 mkdir $VALVEDIR
 cd $VALVEDIR
