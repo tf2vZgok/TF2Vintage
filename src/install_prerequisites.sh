@@ -4,7 +4,7 @@ case "$BUILDARCH" in
 amd64)
 	dpkg --add-architecture i386
 	apt-get update
-yes |	apt-get install libc:i386
+yes |   apt-get install libc6:i386 libstdc++:i386
 	;;
 i386)
 	;;
