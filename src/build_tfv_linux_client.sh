@@ -1,6 +1,7 @@
 #!/bin/bash
 NPROC=$(nproc)
 export VALVEDIR=$PWD/devtools/valve
+mkdir $VALVEDIR
 cd $VALVEDIR
 wget -nc http://media.steampowered.com/client/runtime/steam-runtime-sdk_latest.tar.xz
 tar xf steam-runtime-sdk_latest.tar.xz

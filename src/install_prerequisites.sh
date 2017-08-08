@@ -4,7 +4,7 @@ case "$BUILDARCH" in
 amd64)
 	dpkg --add-architecture i386
 	apt-get update
-	apt-get install libc:i386
+yes |	apt-get install libc:i386
 	;;
 i386)
 	;;
@@ -13,4 +13,4 @@ i386)
 	exit 1
 	;;
 esac
-apt-get install build-essential
+yes | apt-get install build-essential
